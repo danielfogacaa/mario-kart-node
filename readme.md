@@ -80,32 +80,24 @@
 
 <b>Jogadores:</b>
 
-<input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador gera uma quantidade aleatória de personagens a partir da lista de personagens disponíveis</label>
+<p>O Computador gera uma quantidade aleatória de personagens a partir da lista de personagens disponíveis</p>
 
 <b>Pistas:</b>
 
 <ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória e o número de rodadas vai ser gerado aleatóriamente(as rodadas possíveis são: 3, 5 ou 7)</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou eliminação</label>
+  <li><p>Os personagens irão correr em uma pista aleatória e o número de rodadas vai ser gerado aleatóriamente(as rodadas possíveis são: 3, 5 ou 7)</p></li>
+  <li><p>A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou eliminação</p>
     <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, e os pontos são distribuídos conforme a posição final na rodada</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, e os pontos são distribuídos conforme a posição final na rodada</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja ELIMINAÇÃO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, o último colocado da rodada é eliminado</label></li>
+      <li><p>Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, e os pontos são distribuídos conforme a posição final na rodada</p></li>
+      <li><p>Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, e os pontos são distribuídos conforme a posição final na rodada</p></li>
+      <li><p>Caso o bloco da pista seja ELIMINAÇÃO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, o último colocado da rodada é eliminado</p></li>
     </ul>
   </li>
 </ul>
 
 <b>Condição de vitória:</b>
 
-<input type="checkbox" id="vitoria-item" />
-<label for="vitoria-item">Ao final, vence quem acumulou mais pontos</label>
-
-<b>Observações:</b>
-
-<label for="obs-1-item">Além do proposto no projeto inicial, alterei e adicionei alguns novos funcionamentos, como a geração aleatória de jogadores participantes e do número de rodadas, também alterei o modo confronto para eliminação, uma vez que não tenho apenas 2 jogadores por partida para se confrontarem.</label>
-
-<label for="obs-2-item">Adicionei também typescript, utilizado para a tipagem das funções e entidades.</label>
+<p>Ao final, vence quem acumulou mais pontos</p>
 
 <h3>🚀 Evoluções e Desafios Superados</h3>
 
