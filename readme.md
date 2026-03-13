@@ -1,4 +1,4 @@
-<h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
+<h1>Desafio de projeto do Felipão: Mario Kart.TS</h1>
 
   <table>
         <tr>
@@ -31,7 +31,7 @@
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 3</p>
                 <p>Manobrabilidade: 4</p>
-                <p>Poder: 2</p>
+                <p>Poder: 3</p>
             </td>
               <td style="border: 1px solid black; text-align: center;">
                 <p>Yoshi</p>
@@ -49,9 +49,9 @@
                 <img src="./docs/bowser.gif" alt="Mario Kart" width="60" height="60">
             </td>
             <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 5</p>
+                <p>Velocidade: 3</p>
                 <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
+                <p>Poder: 4</p>
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Luigi</p>
@@ -69,7 +69,7 @@
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 2</p>
                 <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
+                <p>Poder: 4</p>
             </td>
         </tr>
     </table>
@@ -81,18 +81,17 @@
 <b>Jogadores:</b>
 
 <input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+<label for="jogadores-item">O Computador gera uma quantidade aleatória de personagens a partir da lista de personagens disponíveis</label>
 
 <b>Pistas:</b>
 
 <ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória de 5 rodadas</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto</label>
+  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória e o número de rodadas vai ser gerado aleatóriamente(as rodadas possíveis são: 3, 5 ou 7)</label></li>
+  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou eliminação</label>
     <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja um CONFRONTO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, quem perder, perde um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Nenhum jogador pode ter pontuação negativa (valores abaixo de 0)</label></li>
+      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, e os pontos são distribuídos conforme a posição final na rodada</label></li>
+      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, e os pontos são distribuídos conforme a posição final na rodada</label></li>
+      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja ELIMINAÇÃO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, o último colocado da rodada é eliminado</label></li>
     </ul>
   </li>
 </ul>
