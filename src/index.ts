@@ -1,4 +1,4 @@
-const PLAYERS = require("./players.ts")
+import { PLAYERS } from "./players.ts"
 import type { Attribute, Block, Player } from "./types.ts"
 
 // guarda os jogadores selecionados para a corrida, que serão escolhidos aleatoriamente a partir do array de jogadores disponíveis

@@ -1,6 +1,6 @@
 import type { Player } from "./types.ts"
 
-const PLAYERS: Player[] = [
+export const PLAYERS: Player[] = [
   {
     name: "Mario",
     speed: 4,
@@ -56,5 +56,3 @@ const PLAYERS: Player[] = [
     lastResult: null
   }
 ]
-
-module.exports = PLAYERS
